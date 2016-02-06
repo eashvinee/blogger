@@ -42,7 +42,14 @@
 			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> 
 			<![endif] -->
 
-		<b:skin></b:skin>
+		<b:skin><![CDATA[
+		/*! 
+		 * Template Name  : Starter
+		 * Author         : Ashvinee Rai
+		 * Author URL     : http://ashvinee.blogspot.in
+		 * Theme URL      : 
+		 * License        : GNU General Public License v2 or later
+		 **/]]></b:skin>
 
 	</head>
 	<body>
@@ -55,7 +62,8 @@
 					<data:blog.pageTitle />
 				</h1>
 				<p class="lead">
-					Use this document as a way to quickly start any new project.
+					Use this document as a way to quickly start any new
+					project.
 				</p>
 			</div>
 
