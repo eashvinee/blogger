@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html expr:dir='data:blog.languageDirection' lang='en-US'
+	xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b'
+	xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta content='width=device-width, initial-scale=1' name='viewport' />
+		<b:include data='blog' name='all-head-content' />
+		<b:if cond='data:blog.pageType == &quot;index&quot;'>
+			<title>
+				<data:blog.pageTitle />
+			</title>
+			<b:else />
+			<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+				<title>
+					<data:blog.pageName />
+					~
+					<data:blog.title />
+				</title>
+				<b:else />
+				<title>404 ~ Page Not Found!</title>
+			</b:if>
+		</b:if>
+		<!-- Bootstrap Core CSS -->
+		<link
+			href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
+			rel='stylesheet' />
+
+		<!-- Custom Fonts -->
+		<link
+			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'
+			rel='stylesheet' />
+		<link
+			href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic'
+			rel='stylesheet' type='text/css' />
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media 
+			queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> 
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> 
+			<![endif] -->
+
+		<b:skin></b:skin>
+
+	</head>
+	<body>
+		<b:section id="main"></b:section>
+
+		<div class="container">
+			<div class="starter-template">
+				<h1>
+					Starter template :
+					<data:blog.pageTitle />
+				</h1>
+				<p class="lead">
+					Use this document as a way to quickly start any new project.
+				</p>
+			</div>
+
+		</div><!-- /.container -->
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script
+			src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' />
+		<!-- Latest compiled and minified JavaScript -->
+		<script
+			src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' />
+
+	</body>
+</html>
